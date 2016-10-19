@@ -2,20 +2,19 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package ftpclient;
+package GroupTalk;
 
 import java.io.*;
 import java.net.*;
 
-public class FileDialogClient {
+public class TCPThreadClient {
 
     //套接字程序设计. 
     private Socket socket = null;
     //用于字节和字符之间转换用的变量.
     private PrintWriter pw;
     private BufferedReader br;
-    
-    public FileDialogClient(String ip, String port) throws IOException {
+    public TCPThreadClient(String ip, String port) throws IOException {
         socket = new Socket(ip, Integer.parseInt(port));
         //主动向服务器发起连接,实现TCP中三次握手的过程。
         //若不成功(网络问题,地址错误,服务器资源紧张等),抛出错误，其错误信息交由调用者处理。

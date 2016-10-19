@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package lookupscore;
+package GroupTalk;
 
 import java.io.IOException;
 
@@ -10,14 +10,14 @@ import java.io.IOException;
  *
  * @author Administrator
  */
-public class LookUpScoreJFrame extends javax.swing.JFrame {
+public class TCPThreadClientFrame extends javax.swing.JFrame {
 
-    private LookupScore ec;
+    private TCPThreadClient ec;
 
     /**
-     * Creates new form TCPClientFrame
+     * Creates new form multiTCPClientFrame
      */
-    public LookUpScoreJFrame() {
+    public TCPThreadClientFrame() {
         initComponents();
 
     }
@@ -52,6 +52,7 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
 
         jLabel1.setText("ip地址");
 
+        jTextField1.setText("127.0.0.1");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -59,6 +60,8 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
         });
 
         jLabel2.setText("Port");
+
+        jTextField2.setText("801");
 
         jButton1.setText("Connect");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -156,9 +159,10 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+
         String msg1 = jTextField3.getText();
         ec.send(msg1);
-        
+
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -167,26 +171,25 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
         String ip = jTextField1.getText();
         String port = jTextField2.getText();
         try {
-            ec = new LookupScore(ip, port);
+            ec = new TCPThreadClient(ip, port);
             jTextArea1.append("Success.\r\n");
         } catch (IOException ex) {
             jTextArea1.append("Failed.\r\n");
         }
-        String msg2 = ec.receive();
-        jTextArea1.append(msg2 + "\n");
-
         Thread receiver = new Thread() {//用一个线程专门来接收信息。
             @Override
             public void run() {
                 String msg = null;
                 while ((msg = ec.receive()) != null) {
                     jTextArea1.append(msg + "\n");
+                    int length=jTextArea1.getText().length();
+                    jTextArea1.setCaretPosition(length);//滚动条总是移动到最后一行信息.
+
                 }
                 jTextArea1.append("对话已关闭！\n");
             }
         };
-
-        receiver.start();//启动该线程。  
+        receiver.start();//启动该线程。 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -199,7 +202,7 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:  
+        // TODO add your handling code here:
         this.jButton2ActionPerformed(evt);
     }//GEN-LAST:event_jTextField3ActionPerformed
 
@@ -220,21 +223,52 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LookupScore.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TCPThreadClientFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LookupScore.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TCPThreadClientFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LookupScore.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TCPThreadClientFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LookupScore.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TCPThreadClientFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new LookUpScoreJFrame().setVisible(true);
+                new TCPThreadClientFrame().setVisible(true);
             }
         });
     }

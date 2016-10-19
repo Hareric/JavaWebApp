@@ -21,7 +21,7 @@ public class FileDataClient {
     private PrintWriter pw;
     private BufferedReader br;
     public FileDataClient(String ip, String port) throws IOException {
-        dataSocket = new Socket(ip, Integer.parseInt(port));
+        dataSocket = new Socket(ip, Integer.parseInt(port)-1);
         //主动向服务器发起连接,实现TCP中三次握手的过程。
         //若不成功(网络问题,地址错误,服务器资源紧张等),抛出错误，其错误信息交由调用者处理。
         //若成功,做下面两件事情。   
