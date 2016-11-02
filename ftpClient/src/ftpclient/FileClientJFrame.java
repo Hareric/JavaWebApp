@@ -61,6 +61,7 @@ public class FileClientJFrame extends javax.swing.JFrame {
 
         jLabel1.setText("ip地址");
 
+        jTextIP.setText("192.168.221.74");
         jTextIP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextIPActionPerformed(evt);
@@ -69,6 +70,7 @@ public class FileClientJFrame extends javax.swing.JFrame {
 
         jLabel2.setText("端口");
 
+        jTextPort.setText("2021");
         jTextPort.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextPortActionPerformed(evt);

@@ -52,6 +52,7 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
 
         jLabel1.setText("ip地址");
 
+        jTextField1.setText("222.201.101.15");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -59,6 +60,8 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
         });
 
         jLabel2.setText("Port");
+
+        jTextField2.setText("9009");
 
         jButton1.setText("Connect");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
