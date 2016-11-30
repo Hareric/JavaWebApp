@@ -1,4 +1,4 @@
-package netCaptor;
+package packetCapture;
 
 /**过滤框中要输入小写,如:tcp udp ip等
  *

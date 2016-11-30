@@ -3,20 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/javamail/JavaMail.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/javamail/TCPClientThreadFrame.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/socketudp/UDPServer.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/scanner/PortScanner.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/lookupscore/LookUpScoreJFrame.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/sockettcp/TCPServer.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/ftpclient/FileClientJFrame.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/scanner/HostScanner.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/socketudp/UDPClientJFrame.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/GroupTalk/TCPThreadClientFrame.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/sockettcp/TCPClientThreadFrame.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/javamail/TCPClient.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/socketudp/SocketUDP.java</file>
-            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/scanner/src/ftpclient/FtpClient.java</file>
+            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/JavaWeb/src/packetCapture/Jcapturedialog.java</file>
+            <file>file:/Users/Har/NetBeansProjects/JavaWebApp/JavaWeb/src/packetCapture/NetcaptureJFrame.java</file>
         </group>
     </open-files>
 </project-private>

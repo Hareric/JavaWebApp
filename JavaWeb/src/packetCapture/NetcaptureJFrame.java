@@ -30,15 +30,15 @@ public class NetcaptureJFrame extends javax.swing.JFrame {
                 
                 String msg = packet.toString();
                 //只显示和某IP地址有关的.
-                if (msg.contains("202.116.192")) {
+                if (msg.contains("222.201.101.15")) {
                     jTextArea1.append(msg + "\n");
                     //进一步查看包中的数据部分
-//                    try {
-//                        String submsg = new String(packet.data, 0, packet.data.length, "utf-8");
-//                        jTextArea1.append("数据部分: \n" + submsg + "\n\n");
-//                    } catch (IOException ex) {
-//                        ex.printStackTrace();
-//                    }
+                    try {
+                        String submsg = new String(packet.data, 0, packet.data.length, "GB2312");
+                        jTextArea1.append("数据部分: \n" + submsg + "\n\n");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
         };
