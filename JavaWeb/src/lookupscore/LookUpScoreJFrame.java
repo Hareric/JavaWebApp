@@ -70,6 +70,7 @@ public class LookUpScoreJFrame extends javax.swing.JFrame {
             }
         });
 
+        jTextField3.setText("20141002419 陈文达");
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);

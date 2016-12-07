@@ -6,7 +6,6 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -134,6 +133,9 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="jTextField3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="20141002419 &#x9648;&#x6587;&#x8fbe;"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField3ActionPerformed"/>
       </Events>
