@@ -10,6 +10,7 @@
 需要要提前配置Jpcap开源包
 
 ![packet capture][2]
-  [1]: http://oevwfwaro.bkt.clouddn.com/java%20mail.png
-  [2]: http://oevwfwaro.bkt.clouddn.com/packetCapture.jpg
+
+  [1]: https://raw.githubusercontent.com/Hareric/tuchuang/master/graph/java%20mail.png
+  [2]:https://raw.githubusercontent.com/Hareric/tuchuang/master/graph/packetCapture.jpg
 
